@@ -40,8 +40,13 @@ body {
 #button{
         position: absolute;
         z-index: 150; 
-        bottom: 90px;
+        bottom: 110px;
         cursor: pointer;
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'spotify';
          width: 185px;
 }
 
