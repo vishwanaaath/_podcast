@@ -17,41 +17,16 @@ body {
   src: url('circular-std-medium-500.ttf');
 }
 
-.Floater1 { 
-   animation: swayingFloat 5s ease-in-out infinite;
-  animation-delay: 0s;
-}
-.Floater2 { 
-  animation: randomFloat 6s ease-in-out infinite;
-  animation-delay: 0s;
-}
-.Floater3 { 
- animation: gentleFloat 6s ease-in-out infinite;
-  animation-delay: 0s;
-}
+ 
 
 .bg{
         width: 100%;
       height: 100%;
+       position: absolute;
 }
 
 
-
-#one{
-        position: absolute;
-}
-#two{
-        position: absolute;
-        width:100%;
-}
-#three{
-        position: absolute;
-}
-
-
-
-
-
+ 
 
 
  
@@ -64,10 +39,10 @@ body {
 
 #button{
         position: absolute;
-        z-index: 100; 
-        bottom: 70px;
+        z-index: 150; 
+        bottom: 90px;
         cursor: pointer;
-         width: 150px;
+         width: 190px;
 }
 
 #button2{
@@ -79,70 +54,169 @@ body {
   font-family: 'spotify';
 }
 
-/* 1. Gentle Float */
-@keyframes gentleFloat {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  25% {
-    transform: translate(-5px, -5px) scale(1.02);
-  }
-  50% {
-    transform: translate(5px, -10px) scale(1.03);
-  }
-  75% {
-    transform: translate(-3px, 5px) scale(1.01);
-  }
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-}
-
-/* 2. Swaying Float */
-@keyframes swayingFloat {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  25% {
-    transform: translate(7px, -5px) rotate(3deg);
-  }
-  50% {
-    transform: translate(-7px, 5px) rotate(0deg);
-  }
-  75% {
-    transform: translate(5px, -5px) rotate(2deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-}
  
 
-/* 4. Random Float */
-@keyframes randomFloat {
+.element1 { animation: float1 4s infinite ease-in-out; }
+.element2 { animation: float2 4.2s infinite ease-in-out; }
+.element3 { animation: float3 3.8s infinite ease-in-out; }
+.element4 { animation: float4 4.1s infinite ease-in-out; }
+.element5 { animation: float5 4.3s infinite ease-in-out; }
+.element6 { animation: float6 3.9s infinite ease-in-out; }
+.element7 { animation: float7 4s infinite ease-in-out; }
+.element8 { animation: float8 4.2s infinite ease-in-out; }
+.element9 { animation: float9 3.7s infinite ease-in-out; }
+
+ 
+
+/* 1. float1 - Gentle Sway */
+@keyframes float1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-2px, -2px) rotate(-0.5deg);
+  }
+  50% {
+    transform: translate(2px, 2px) rotate(0.5deg);
+  }
+  75% {
+    transform: translate(-1px, 1px) rotate(-0.2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* 2. float2 - Smooth Sway with Scale */
+@keyframes float2 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  25% {
+    transform: translate(3px, -2px) scale(1.005) rotate(0.5deg);
+  }
+  50% {
+    transform: translate(-3px, 2px) scale(1.01) rotate(-0.5deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
+
+/* 3. float3 - Dynamic Sway */
+@keyframes float3 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(3px, 2px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-3px, -2px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(2px, 3px) rotate(0.5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* 4. float4 - Gentle Float with Tilt */
+@keyframes float4 {
   0% {
     transform: translate(0, 0) scale(1);
   }
-  20% {
-    transform: translate(5px, -8px) scale(1.04);
+  25% {
+    transform: translate(2px, -2px) scale(1.005) rotate(0.2deg);
   }
-  40% {
-    transform: translate(-7px, 5px) scale(1.02);
-  }
-  60% {
-    transform: translate(7px, 15px) scale(1.05);
-  }
-  80% {
-    transform: translate(-5px, -10px) scale(1.03);
+  50% {
+    transform: translate(-2px, 2px) scale(1.01) rotate(-0.2deg);
   }
   100% {
     transform: translate(0, 0) scale(1);
   }
 }
 
+/* 5. float5 - Spiraling Sway */
+@keyframes float5 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  30% {
+    transform: translate(2px, 3px) rotate(2deg);
+  }
+  60% {
+    transform: translate(-2px, -3px) rotate(-2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
 
+/* 6. float6 - Gentle Drift with Scale */
+@keyframes float6 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(3px, -2px) scale(1.01);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
 
+/* 7. float7 - Random Sway */
+@keyframes float7 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(3px, -3px) rotate(0.5deg);
+  }
+  50% {
+    transform: translate(-3px, 3px) rotate(-0.5deg);
+  }
+  80% {
+    transform: translate(2px, -2px) rotate(0.2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
 
+/* 8. float8 - Bold Sway */
+@keyframes float8 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-3px, -2px) rotate(-1deg);
+  }
+  50% {
+    transform: translate(3px, 2px) rotate(1deg);
+  }
+  75% {
+    transform: translate(-2px, 3px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* 9. float9 - Balanced Sway */
+@keyframes float9 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(2px, -2px) scale(1.005) rotate(0.7deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
 
 #container {
         display: flex;
