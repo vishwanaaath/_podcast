@@ -16,7 +16,7 @@
 
 @media only screen and (max-width: 767px) {
     #button {
-        bottom: 120px; /* Adjust this value to move the button up on mobile */
+        bottom: 110px; /* Adjust this value to move the button up on mobile */
         font-size: 28px; 
     }
 }
