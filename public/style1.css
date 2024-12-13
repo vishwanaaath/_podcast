@@ -18,5 +18,6 @@
     #button {
         bottom: 110px; /* Adjust this value to move the button up on mobile */
         font-size: 35px;
+        display: none;
     }
 }
