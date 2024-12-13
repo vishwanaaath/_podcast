@@ -1,6 +1,7 @@
 body {
         display: flex;
         justify-content: center;align-items: center;
+        background-color: #95b5c5;
     background-image: url('1.png');
     background-size: cover;         /* Makes the image cover the entire body */
     background-repeat: no-repeat;   /* Prevents the image from repeating */
