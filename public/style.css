@@ -45,8 +45,11 @@ body {
         font-weight: 900;
         font-family: 'spotify';
         color: #fff;
-         width: 185px;
+         width: 185px;    
 }
+
+
+ 
 
 #button2{
   background-color: transparent;

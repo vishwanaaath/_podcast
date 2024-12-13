@@ -1,0 +1,22 @@
+@media only screen and   (max-width: 767px)  { 
+.removeinMobile{
+        display: none;
+}
+ 
+}
+
+
+/* For medium to large smartphones (e.g., iPhone 12, Samsung Galaxy S series) */
+@media only screen  and (min-width: 767px) { 
+       .removeinWeb{
+        display: none;
+       }
+      
+}
+
+@media only screen and (max-width: 767px) {
+    #button {
+        bottom: 150px; /* Adjust this value to move the button up on mobile */
+        font-size: 35px;
+    }
+}
