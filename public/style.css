@@ -56,14 +56,17 @@ body {
          width: 185px;    
 }
 
-
+#back{
+  display: flex;
+  justify-content: center;
+}
  
 
 #button2{
   background-color: transparent;
   border: none;
   font-size: 25px;
-  color: #fff;
+  color: #0a3757;
   cursor: pointer;
   font-family: 'spotify';
 }
@@ -236,7 +239,7 @@ body {
         display: flex;
         z-index: 110;
         justify-content: center;align-items: center;
-    width: 100vw;
+    width: 100vw; 
     font-family: 'spotify'; 
     height: 100vh;
     border-radius: 15px;
@@ -258,10 +261,11 @@ body {
   border: 0;
   border-bottom: 2px #fff solid;
   display: block;
+  font-weight: 600;
   width: 100%;
   padding: 15px 0;
   font-size: 18px;
-  color: #fff;
+  color: #0a3757;
 }
 
 .form-control input:focus,
@@ -272,7 +276,7 @@ body {
 
 .form-control label {
   position: absolute;
-  color: #fff;
+  color: #0a3757;
   top: 15px;
   left: 0;
   pointer-events: none;
