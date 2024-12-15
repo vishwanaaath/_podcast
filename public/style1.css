@@ -20,8 +20,7 @@
         font-size: 24px; 
     }
 
-    #subscribeForm {
-  position: absolute;
+    #subscribeForm { 
   margin: 20px 0 40px;
   width:250px;
   top: 150px;
