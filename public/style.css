@@ -27,7 +27,7 @@ body {
        position: absolute;
 }
 .bgm{
-  top: 10px;
+  top: 0px;
         width: 100%; 
       height: 100%;
        position: absolute;
@@ -65,7 +65,7 @@ body {
 #button2{
   background-color: transparent;
   border: none;
-  font-size: 25px;
+  font-size: 28px;
   color: #0a3757;
   cursor: pointer;
   font-family: 'spotify';
@@ -244,7 +244,7 @@ body {
     height: 100vh;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background color */
-    backdrop-filter: blur(20px);                /* Apply background blur */
+    backdrop-filter: blur(25px);                /* Apply background blur */
     -webkit-backdrop-filter: blur(10px);        /* For Safari compatibility */ 
 }
 
@@ -259,7 +259,7 @@ body {
 .form-control input {
   background-color: transparent;
   border: 0;
-  border-bottom: 2px #fff solid;
+  border-bottom: 2px #0a3757 solid;
   display: block;
   font-weight: 600;
   width: 100%;
@@ -271,7 +271,7 @@ body {
 .form-control input:focus,
 .form-control input:valid {
   outline: 0;
-  border-bottom-color: #fff;
+  border-bottom-color: #0a3757;
 }
 
 .form-control label {
